@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  background-color: #f5f8fa;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f8fa;
+  font-family: "Lato", sans-serif;
+  color: #1d2c3c;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: inherit;
+}
+.container {
+  max-width: 1360px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e0e6ea;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav > a {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.account-btn {
+  border: 2px solid #646e7a;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.menu-icon {
+  display: none;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.main-container {
+  max-width: 700px;
+  height: 650px;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0px 5px 15px 0px #0000000d;
+}
+.checkout-section {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.checkout-section h2 {
+  font-size: 1.875rem;
+  padding: 2rem;
+}
+
+.rectangle {
+  background-color: #f5f7fa;
+  height: 1px;
+  border: none;
+}
+.checkout-container {
+  margin-bottom: 2rem;
+}
+.basic-section {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.basic-section > h3 {
+  margin: 0 1rem;
+}
+.form-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #1d2c3c;
+}
+.firstName,
+.lastName,
+.email,
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #646e7a;
+}
+input {
+  background: #edeff2;
+  padding: 0.5rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.email {
+  padding: 0.25rem 2rem;
+}
+.section_2 {
+  margin-bottom: 2rem;
+}
+.credit-card-container {
+  padding: 0 2rem;
+}
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+.credit-card {
+  width: 350px;
+}
+#expiry,
+#cvc {
+  padding: 0.5rem 0;
+  width: 115px;
+}
+.submit-btn {
+  margin: 2rem;
+}
+.submit-btn > button {
+  background-color: #038e7d;
+  border-radius: 5px;
+  padding: 0.65rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  width: 100%;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+.info > p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1d2c3c;
+}
+.message {
+  font-weight: 400;
+}
+.info > img {
+  margin-right: 0.5rem;
+}
+.stripe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  font-size: 0.9rem;
+}
+.sidebar-section {
+  background-color: #1179bf;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: #ffffff;
+  padding: 2rem;
+}
+.pricing-section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 1.25rem;
+}
+.price-tag {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+.year {
+  font-weight: 300;
+}
+.renew {
+  width: 150px;
+  font-style: italic;
+  font-weight: 300;
+}
+.circle-list {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.circle-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.circle-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em;
+  background-image: url("./assets/tick.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.note {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+.note > span {
+  font-weight: 700;
+}
+.note {
+  border-bottom: 3px solid #b9f5ff;
+}
+.border {
+  border-bottom: 1px solid gray;
+}
+.testimonial {
+  margin: 2rem 0;
+  font-size: 1rem;
+  font-style: italic;
+}
+.testimonial span {
+  font-weight: 700;
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.author > img {
+  border-radius: 50%;
+}
+.author p {
+  font-weight: 700;
+}

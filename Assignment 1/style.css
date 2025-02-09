@@ -1,0 +1,68 @@
+/* styles for otter essay design */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-color: #000000;
+  --background: #1a1a1a;
+  --accent-color: #ff0099;
+  --secondary-text: #333;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+}
+
+.card-header {
+  background: var(--accent-color);
+  width: 330px;
+  padding: 1.5rem;
+  position: absolute;
+  border-radius: 6px;
+  left: 50%;
+  top: -7.5%;
+  transform: translateX(-50%);
+}
+
+.card-header h1 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.card-content {
+  padding: 1.25rem 2rem;
+  text-align: start;
+}
+
+.card-content p {
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-text);
+  line-height: 1.6;
+  font-weight: 600;
+}

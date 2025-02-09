@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --background-clr: #f5fcf8;
+  --text-clr: #000b0a;
+  --accent-text-clr: #737373;
+  --white-clr: #ffffff;
+  --text-label: #011c34;
+  --border: #f0f0f0;
+  --accent-clr: #2ec4b6;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-clr);
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  margin: auto;
+}
+.info-section {
+  flex: 1;
+  text-align: left;
+}
+h1 {
+  color: var(--text-clr);
+  font-size: clamp(1.875rem, 5vw, 2.5rem);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.info-section p {
+  color: var(--accent-text-clr);
+  max-width: 445px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+.form-section {
+  flex: 1;
+  background-color: var(--white-clr);
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 580px;
+  box-shadow: 0px 4px 50px 0px #0408131a;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+label {
+  margin: 0.9rem 0 0.7rem 0;
+  color: var(--text-label);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+}
+.input-wrapper > input[type="date"],
+.input-wrapper > input[type="password"] {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid var(--border);
+  outline: none;
+}
+input::placeholder,
+option {
+  font-size: 0.9rem;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+.input-wrapper:has(:focus) {
+  border: 2px solid var(--accent-clr);
+}
+.btn-submit {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--accent-clr);
+  color: var(--white-clr);
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  box-shadow: 0px 10px 40px 0px #0000001a;
+  border-radius: 2px;
+}
+.terms {
+  text-align: center;
+  font-size: 0.9rem;
+}
+a:link,
+a:visited {
+  color: var(--accent-clr);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .form-section {
+    padding: 1rem;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+}
