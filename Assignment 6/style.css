@@ -9,6 +9,7 @@
 body {
   font-family: "Afacad Flux", serif;
   background-color: floralwhite;
+  width: 100%;
 }
 
 nav {
@@ -83,7 +84,7 @@ main {
 }
 .main_content {
   max-width: 100%;
-  width: calc(100% - 2rem);
+  width: calc(1300px - 2rem);
   margin: 2rem 0 auto;
 }
 .main_content > h2 {
@@ -360,10 +361,8 @@ span {
 .btn-outline {
   padding: 10px 20px;
   border: 2px solid #0065fe;
-
   border-radius: 100px;
   color: #0065fe;
-
   text-decoration: none;
   margin-right: 10px;
   display: inline-block;
@@ -465,6 +464,7 @@ h1 {
 .faq-wrapper {
   width: 100%;
   height: 1153px;
+  max-height: 100%;
   background: white;
   display: flex;
   justify-content: center;
@@ -552,7 +552,9 @@ details p {
   flex-direction: column;
   align-items: center;
   height: 299px;
+  max-height: 100%;
   width: 100%;
+  max-width: 100%;
   position: relative;
 }
 .bg-pattern-1 {
@@ -684,7 +686,15 @@ details p {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .footer{
+    height:max-content;
+  }
+  .footer-container {
+  position: relative;
+ 
+}
 
   .footer-links {
+    flex-direction: column;
   }
 }
